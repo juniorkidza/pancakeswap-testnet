@@ -1,6 +1,6 @@
 import { ChainId, JSBI, Percent, Token, WETH } from '../sdk'
 
-export const ROUTER_ADDRESS = '0x8e734ffa7e819c25381bc777c582a1c260beff28'
+export const ROUTER_ADDRESS = '0x05cf160b080348CC35A0CF331e0e5811E5310a2A'
 
 // a list of tokens by chain
 type ChainTokenList = {
@@ -29,6 +29,7 @@ export const ETH = new Token(
 const WETH_ONLY: ChainTokenList = {
   [ChainId.MAINNET]: [WETH[ChainId.MAINNET]],
   [ChainId.BSCTESTNET]: [WETH[ChainId.BSCTESTNET]],
+  [ChainId.KOVANTESTNET]: [WETH[ChainId.KOVANTESTNET]]
 }
 
 // used to construct intermediary pairs for trading

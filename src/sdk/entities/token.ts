@@ -70,5 +70,12 @@ export const WETH = {
     18,
     'WETH',
     'Wrapped ETH'
+  ),
+  [ChainId.KOVANTESTNET]: new Token(
+    ChainId.KOVANTESTNET,
+    '0xc36D4638be4eEa6d8318Bc5f42B043CFA38C19F6',
+    18,
+    'WETH',
+    'Wrapped ETH'
   )
 }
